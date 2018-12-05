@@ -404,7 +404,7 @@ DeviceInfo OpLevelCostEstimator::GetDeviceInfo(
     } else {
       // Pascal (compute capability version 6) and Volta (compute capability
       // version 7)
-      cores_per_multiprocessor = 64;
+      cores_per_multiprocessor = 128;
     }
     gflops = device.num_cores() * device.frequency() * 1e-3 *
              cores_per_multiprocessor * kOpsPerMac;
